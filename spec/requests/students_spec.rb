@@ -21,18 +21,18 @@ RSpec.describe "Students", type: :request do
     end
   end
 
-  describe "GET /students/grades" do
-    it 'returns an array of all students ordered by grade' do
-      get '/students/grades'
+  # describe "GET /students/grades" do
+  #   it 'returns an array of all students ordered by grade' do
+  #     get '/students/grades'
 
-      expect(response.body).to include_json([
-        { first_name: 'Idris', last_name: 'Elba', grade: 105 },
-        { first_name: 'Dwayne', last_name: 'Johnson', grade: 99 },
-        { first_name: 'Vanessa', last_name: 'Kirby', grade: 85 },
-        { first_name: 'Jason', last_name: 'Statham', grade: 70 }
-      ])
-    end
-  end
+  #     expect(response.body).to include_json([
+  #       { first_name: 'Idris', last_name: 'Elba', grade: 105 },
+  #       { first_name: 'Dwayne', last_name: 'Johnson', grade: 99 },
+  #       { first_name: 'Vanessa', last_name: 'Kirby', grade: 85 },
+  #       { first_name: 'Jason', last_name: 'Statham', grade: 70 }
+  #     ])
+  #   end
+  # end
   
   ## BONUS: un-comment out the code below to run the bonus test
 
